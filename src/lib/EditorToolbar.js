@@ -202,7 +202,7 @@ export default class EditorToolbar extends Component {
     return (
       <ButtonGroup key={name}>
         <PopoverIconButton
-          label="Link"
+          label="Criar Hyperlink"
           iconName="link"
           isDisabled={!shouldShowLinkButton}
           showPopover={this.state.showLinkInput}
@@ -212,7 +212,7 @@ export default class EditorToolbar extends Component {
         />
         <IconButton
           {...toolbarConfig.extraProps}
-          label="Remove Link"
+          label="Remover Hyperlink"
           iconName="remove-link"
           isDisabled={!isCursorOnLink}
           onClick={this._removeLink}
@@ -244,7 +244,7 @@ export default class EditorToolbar extends Component {
       <ButtonGroup key={name}>
         <IconButton
           {...toolbarConfig.extraProps}
-          label="Undo"
+          label="Desfazer"
           iconName="undo"
           isDisabled={!canUndo}
           onClick={this._undo}
@@ -252,7 +252,7 @@ export default class EditorToolbar extends Component {
         />
         <IconButton
           {...toolbarConfig.extraProps}
-          label="Redo"
+          label="Refazer"
           iconName="redo"
           isDisabled={!canRedo}
           onClick={this._redo}
