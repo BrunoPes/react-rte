@@ -47,7 +47,7 @@ export default class InputPopover extends Component {
             ref={this._setInputRef}
             defaultValue={props.defaultValue}
             type="text"
-            placeholder="https://example.com/"
+            placeholder="https://www.seusite.com.br/"
             className={styles.input}
             onKeyPress={this._onInputKeyPress}
           />
